@@ -1,0 +1,24 @@
+# Sales Tracking Sheet # 
+
+stock = 50
+sofas_sold = 700
+target = 800
+
+# Has the target been reached? #
+
+target_hit = sofas_sold == target
+if target_hit:
+    print("Target has been reached!")
+else:
+    print("Target has not been reached ")
+
+# Is there any stock? #
+
+current_stock = stock - sofas_sold
+if current_stock != 0:
+    print("We have stock")
+else:
+    print("We are currently out of stock!")
+
+if stock == range(1, 100):
+    print("We have low stock")
